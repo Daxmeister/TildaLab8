@@ -64,3 +64,19 @@ class LinkedQ():
 
     def show_last(self):
         print(self._last.data)
+
+    def __str__(self):
+        list = []
+        pekare = self._first
+        while pekare != None:
+            list.append(pekare.data)
+            pekare = pekare.next
+        string = ''.join(map(str, list))
+        return string
+
+
+'''q = LinkedQ()
+q.enqueue("pongis")
+q.enqueue(13)
+q.enqueue("tip")
+print(q)'''
