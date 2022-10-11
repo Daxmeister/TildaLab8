@@ -57,7 +57,10 @@ class LinkedQ():
             return counter
 
     def peek(self):
-        return self._first
+        if self._first is not None:
+            return self._first.data
+        else:
+            return None
 
     def show_first(self):
         print(self._first.data)
