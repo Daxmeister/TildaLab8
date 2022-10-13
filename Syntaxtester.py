@@ -1,5 +1,5 @@
 import unittest
-from Syntax import *
+from Syntax import
 
 class SyntaxTest(unittest.TestCase):
 
